@@ -3,14 +3,14 @@
  1. Get form data
  Assume you have a django view:
 
-
+```python
 def add_post(request):
 	context = RequestContext(request)
 	post_data=newadd(request.POST,request.FILES)
 	if request.method=='POST':
     data={}
     ###then pass your classes here
-
+```
 
 #Class to get form data
  class FormData():
@@ -37,7 +37,7 @@ def add_post(request):
 
 
 2. Compress the images to occupy less memory space
-
+```python
 from PIL import Image
 from class.models import model
 class Compress():
@@ -60,3 +60,4 @@ class Compress():
 		image2.save(image2, format="JPEG", quality=80)
 		#save to database
 		images.save()
+```
