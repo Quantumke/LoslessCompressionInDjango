@@ -13,6 +13,7 @@ def add_post(request):
 ```
 
 #Class to get form data
+```python
  class FormData():
 	def run(data):
 		data['form_data']=FormData.get_form.request_data
@@ -34,7 +35,7 @@ def add_post(request):
 		files['image3']= request_files.POST.get('image3')
 		#the return the files
 		return files
-
+```
 
 2. Compress the images to occupy less memory space
 ```python
