@@ -1,8 +1,7 @@
 class FormData():
 	def run(data):
-		data['get_form']=FormData.get_form.request_data
-		data['get_images']=FormData.get_images.request_files
-		return data
+		data['form_data']=FormData.get_form.request_data
+		data['images']=FormData.get_images.request_files
 
 	def get_form(request_data):
 		#getting user input from django view
